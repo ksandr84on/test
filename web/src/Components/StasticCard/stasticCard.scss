@@ -1,0 +1,101 @@
+@import '../../Pages/Common/colors.dashboard.scss';
+
+.stastic-card-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 11rem;
+  background-color: white;
+  border-radius: 0.625rem;
+  padding: 0 1.875rem 0 1.875rem;
+
+  .values-section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-start;
+    margin-right: 1rem;
+    justify-content: center;
+
+    .details-section {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      padding: 0.5rem 0 0.5rem 0;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      font-family: 'Inter';
+      font-size: 1.15rem;
+      font-weight: 500;
+      width: 100%;
+      color: rgba(58, 53, 65, 0.8);
+    }
+
+    .unit {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-bottom: -0.6rem;
+      margin-top: 0;
+      font-family: 'Inter';
+      font-size: 0.875rem;
+      font-weight: 500;
+      width: 100%;
+      color: rgba(58, 53, 65, 0.5);
+    }
+
+    .value {
+      font-family: 'Inter';
+      font-size: 2rem;
+      font-weight: 600;
+      width: 100%;
+      color: $primary-blue;
+      padding: 0;
+    }
+
+    .updated-on {
+      display: flex;
+      flex-direction: row;
+      font-size: 0.813rem;
+      border-radius: 3.125rem;
+      padding: 0 0.5rem 0 0.5rem;
+      margin-top: 1rem;
+      color: $primary-blue;
+      background-color: rgba($color: #b9e2f4, $alpha: 0.4);
+    }
+
+    .updated-on-null {
+      display: flex;
+      flex-direction: row;
+      font-size: 0.813rem;
+      border-radius: 3.125rem;
+      padding: 0 0.5rem 0 0.5rem;
+      margin-top: 1rem;
+      color: transparent;
+      background-color: transparent;
+    }
+  }
+
+  .icon-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 25%;
+    justify-content: center;
+
+    img {
+      height: 80px;
+    }
+  }
+}
+
+.stastic-card-main-container:hover {
+  box-shadow: rgba(0, 5, 18, 0.2) 0px 8px 24px;
+}
